@@ -60,10 +60,6 @@ li {
     padding: 10px 0px;
 }
 
-.contacts li {
-    padding: 10px;
-}
-
 .links li {
     background-color: #7e7eff;
     border-radius: 15px;
@@ -122,21 +118,26 @@ li {
     padding: 30px 20px 0px 20px;
     margin: auto;
     max-width: 500px;
+    font-size: 20px;
 }
 
 .contacts {
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto 0px auto;
+}
+
+.contacts a {
+    padding: 10px;
 }
 
 #contactinfo {
     padding-top: 70px;
+    font-size: 20px;
 }
 
 .linecontainer {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -217,9 +218,33 @@ li {
     animation: change-text-color 1000ms forwards;
 }
 
+@media screen and (max-width: 1000px) {
+    .project, .work {
+        flex-basis: 90%;
+    }
+    .linecontainer {
+        width: 300px;
+    }
+    .header {
+        font-size: 50px;
+    }
+    .body-container, .title {
+        margin-top: 40px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .title {
         width: 80%;
+    }
+    .title p {
+        font-size: 16px;
+    }
+    .linecontainer {
+        width: 200px;
+    }
+    #contactinfo {
+        font-size: 16px;
     }
     .header {
       font-size: 40px;
@@ -232,19 +257,6 @@ li {
     }
     .body-container, .title {
         margin-top: 30px;
-    }
-
-  }
-
-@media screen and (max-width: 1000px) {
-    .project, .work {
-        flex-basis: 90%;
-    }
-    .header {
-        font-size: 50px;
-    }
-    .body-container, .title {
-        margin-top: 40px;
     }
 }
 
