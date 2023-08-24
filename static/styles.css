@@ -5,8 +5,6 @@ html {
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: Helvetica, Arial, Sans-Serif;
     color: white;
 }
@@ -99,7 +97,7 @@ li {
     margin: 60px auto 0px auto;
     width: 70%;
     max-width: 600px;
-    padding: 0px 20px 40px 0px;
+    padding-bottom: 40px;
     animation: fade-in 1000ms forwards;
     background-color: #2F355D;
     border: 2px outset rgba(255, 255, 255, 0.292);
@@ -108,18 +106,21 @@ li {
 }
 
 #portrait {
-    width: 100%;
-    max-width: 510px;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
 }
 
 .header {
     font-size: 60px;
     font-weight: bold;
+    padding: 20px;
 }
 
 .title p {
     display: inline-block;
-    padding-top: 30px;
+    padding: 30px 20px 0px 20px;
+    margin: auto;
     max-width: 500px;
 }
 
@@ -205,6 +206,7 @@ li {
     padding: 5px 10px;   
     border-radius: 15px;
     background-color: #094411;
+    margin: 5px 0px;
 }
 
 .project-link {
@@ -217,7 +219,7 @@ li {
 
 @media screen and (max-width: 700px) {
     .title {
-        width: 90%;
+        width: 80%;
     }
     .header {
       font-size: 40px;
@@ -225,14 +227,21 @@ li {
     .links {
         font-size: 16px;
     }
+    .links li {
+        font-size: 12px;
+    }
     .body-container, .title {
         margin-top: 30px;
     }
+
   }
 
 @media screen and (max-width: 1000px) {
     .project, .work {
         flex-basis: 90%;
+    }
+    .header {
+        font-size: 50px;
     }
     .body-container, .title {
         margin-top: 40px;
